@@ -130,6 +130,11 @@ ul .li::before {
     object-fit: cover;
     z-index: -100;
 }
+.hero-content {
+    display: grid;
+    grid-template-areas:
+    "header-text header-form";
+}
 
 
 /* Area Names */
