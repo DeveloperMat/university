@@ -142,14 +142,22 @@ ul .li::before {
 }
 
 /* Responsive */
-@media (min-width:884px) {
+@media (min-width:1280px ) and (max-width:1330px) {
+    .hero-content {
+        grid-template-areas:
+        "header-text header-form";
+        transform: translate(4rem,5rem) !important;
+    }
+}
+
+@media (min-width:884px) and (max-width:990px) {
     .hero-content {
         grid-template-areas:
             "header-text header-form";
 
         width: 80%;
         margin-top: 60px;
-        transform: translate(15rem, 5rem);
+        transform: translate(15rem, 5rem) !important;
     }
 }
 
@@ -176,6 +184,7 @@ ul .li::before {
     .header-form {
         left: 50px;
     }
+
     .hero-area {
         height: 900px !important;
     }
@@ -200,7 +209,7 @@ ul .li::before {
     .header-form {
         margin-top: 50px;
         width: 300px !important;
-        left: 60px;
+        left: 60px !important;
     }
 
     .hero-area {
@@ -223,6 +232,10 @@ ul .li::before {
         font-size: 10px;
     }
 
+    .header-form {
+        left: 20px;
+    }
+
     .top-social-info {
         margin-top: 0 !important;
     }
@@ -232,9 +245,15 @@ ul .li::before {
     }
 }
 
-@media (max-width:390px) {
+@media (max-width:400px) {
     .header-form {
-        left: 30px;
+        left: 35px !important;
+    }
+}
+
+@media (max-width:380px) {
+    .header-form {
+        left: 30px !important;
     }
 }
 
@@ -629,6 +648,13 @@ ul .li::before {
     }
 }
 
+@media(max-width:390px){
+    .teams {
+        padding: 30px;
+    }
+}
+
+
 
 /* Area Names*/
 
@@ -667,7 +693,7 @@ ul .li::before {
 }
 
 .testimonials .container {
-    height: 600px;
+    height: 650px;
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/IMAGE\ TESTIMONIALS.jpg');
     background-size: cover;
     background-position: center;
@@ -720,6 +746,29 @@ ul .li::before {
         left: 20% !important;
     }
 }
+
+@media (max-width:414px ) {
+    .slide-text p {
+        bottom: 70% !important;
+        left: 25% !important;
+    }
+}
+
+@media(max-width:390px) {
+    .slide-text p {
+        bottom: 70% !important;
+        left: 20% !important;
+    }
+}
+
+@media(max-width:390px) {
+    .slide-text p {
+        /* bottom: 70% !important; */
+        left: 15% !important;
+    }
+}
+
+
 
 /* Responsive End*/
 
