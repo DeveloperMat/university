@@ -1,0 +1,744 @@
+:root {
+    --darkgreen: #01567D;
+    --white: #fff;
+    --lightBlue: #91B5C4;
+    --yellow: #FFB749;
+    --about-bg: #02557D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Tools Start */
+.single-team-member {
+    cursor: pointer !important;
+}
+
+.btn-primary {
+    background-color: var(--yellow) !important;
+    border: none !important;
+    border-radius: 20px !important;
+    width: 150px;
+}
+
+ul .li::before {
+    content: "\2022";
+    color: var(--yellow);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Tools End */
+
+/* Hero Strat */
+.nav-brand {
+    width: 100px;
+}
+
+.hero-area {
+    min-height: auto;
+    /* height: 800px !important; */
+}
+
+.header-info {
+    background-color: var(--darkgreen);
+    color: var(--white);
+}
+
+
+.header-area .top-social-info a {
+    border: none !important;
+}
+
+.pixel-main-menu {
+    z-index: 9999999 !important;
+}
+
+.hero-content {
+    margin-top: 60px;
+    transform: translate(10rem, 5rem);
+    display: grid;
+    /*Especificar posición de las areas*/
+    grid-template-areas:
+        "header-text"
+        "header-form"
+}
+
+
+
+
+.hero-content hr,
+.popular hr,
+.about-us hr,
+.study hr,
+.teams hr {
+    position: relative;
+    border: none;
+    height: 5px;
+    width: 200px;
+    background-color: var(--yellow);
+    margin-bottom: 10px;
+}
+
+.header-form {
+    position: relative;
+    top: -50px;
+    border-radius: 20px;
+}
+
+.header-form .card {
+    border-radius: 20px;
+}
+
+.header-form .card-header {
+    background-color: var(--darkgreen);
+    color: var(--white);
+    position: relative;
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.header-form .card-header::after {
+    content: "";
+    border: 1px solid var(--yellow);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+
+}
+
+.hero-area .single-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background: linear-gradient(to top, rgba(1, 86, 125, .3), rgba(1, 86, 125, .3));
+}
+
+.myVideo {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    z-index: -100;
+}
+
+
+/* Area Names */
+.header-text {
+    grid-area: header-text;
+}
+
+.header-form {
+    grid-area: header-form;
+}
+
+/* Responsive */
+@media (min-width:884px) {
+    .hero-content {
+        grid-template-areas:
+            "header-text header-form";
+
+        width: 80%;
+        margin-top: 60px;
+        transform: translate(15rem, 5rem);
+    }
+}
+
+@media screen and (min-width: 765px) and (max-width: 820px) {
+    .hero-content {
+        grid-template-areas:
+            "header-text"
+            "header-form";
+    }
+
+    .header-text {
+        transform: translate(-10rem, -7rem);
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .hero-content hr {
+        left: 240px;
+    }
+
+    .header-form {
+        left: 50px;
+    }
+    .hero-area {
+        height: 900px !important;
+    }
+
+    .single-slide {
+        height: 900px !important;
+    }
+
+    .myVideo {
+        height: 900px !important;
+    }
+
+}
+
+@media (max-width: 428px) {
+    .hero-content {
+        grid-template-areas:
+            "header-text"
+            "header-form";
+    }
+
+    .header-form {
+        margin-top: 50px;
+        width: 300px !important;
+        left: 60px;
+    }
+
+    .hero-area {
+        height: 1100px !important;
+    }
+
+    .single-slide {
+        height: 1100px !important;
+    }
+
+    .myVideo {
+        height: 1100px !important;
+    }
+
+    .hero-content {
+        transform: translate(0rem, 5rem);
+    }
+
+    .header-info p {
+        font-size: 10px;
+    }
+
+    .top-social-info {
+        margin-top: 0 !important;
+    }
+
+    .hero-content .container {
+        transform: translate(0, -50px) !important;
+    }
+}
+
+@media (max-width:390px) {
+    .header-form {
+        left: 30px;
+    }
+}
+
+/* Hero End*/
+
+.about-us {
+    background-color: var(--about-bg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.about-us-img {
+    border: 4px solid;
+    border-radius: 10px;
+}
+
+.about-us-img img {
+    border-radius: 10px;
+}
+
+/* Popular Start */
+.popular-cards {
+    display: grid;
+    grid-template-areas:
+        "card-1 card-2 card-3 card-4";
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive */
+@media (min-width:1280px) {
+    .popular-cards {
+        grid-template-areas:
+            "card-1 card-2 card-3 card-4"
+    }
+}
+
+@media (max-width:1024px) {
+    .popular-cards {
+        grid-template-areas:
+            "card-1 card-2"
+            "card-3 card-4";
+    }
+
+    .card-3,
+    .card-4 {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:550px) {
+    .popular-cards {
+        grid-template-areas:
+            "card-1"
+            "card-2"
+            "card-3"
+            "card-4"
+        ;
+
+    }
+
+    .card-1,
+    .card-2 {
+        margin-top: 40px;
+    }
+}
+
+/* Area Names */
+.card-1 {
+    grid-area: card-1;
+}
+
+.card-2 {
+    grid-area: card-2;
+}
+
+.card-3 {
+    grid-area: card-3;
+}
+
+.card-4 {
+    grid-area: card-4;
+}
+
+/* End Popular*/
+
+/* Icons */
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/bg-benefits.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.icons-content {
+    display: grid;
+    grid-template-areas:
+        "icon-box1 icon-box2 icon-box3 icon-box4";
+}
+
+.icon-image {
+    background-color: white;
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 550px) {
+    .icons-content {
+        padding: 20px;
+        grid-template-areas:
+            "icon-box1 icon-box2"
+            "icon-box3 icon-box4";
+    }
+}
+
+@media (max-width: 480px) {
+    .icons-content {
+        /* padding: 20px; */
+        grid-template-areas:
+            "icon-box1"
+            "icon-box2"
+            "icon-box3"
+            "icon-box4";
+    }
+
+    .icon-box-1 {
+        margin-top: 100px !important;
+    }
+}
+
+/* Area Names*/
+.icon-box-1 {
+    grid-area: icon-box1;
+}
+
+.icon-box-2 {
+    grid-area: icon-box2;
+}
+
+.icon-box-3 {
+    grid-area: icon-box3;
+}
+
+.icon-box-4 {
+    grid-area: icon-box4;
+}
+
+/* End Icons*/
+
+/* Study */
+
+.study-cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 40px;
+    grid-template-areas:
+        "studycard1 studycard2 studycard3"
+        "studycard1 studycard2 studycard4"
+        "studycard5 studycard5 studycard6"
+
+}
+
+.study-card-1,
+.study-card-2,
+.study-card-3,
+.study-card-4,
+.study-card-5,
+.study-card-6 {
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    /* background-color: goldenrod; */
+}
+
+.study-card-1 {
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/IMAGE\ \ CATEGORY\ ADMINISTRATION.jpg');
+}
+
+.study-card-2 {
+    width: 300px;
+    height: 400px;
+    background-image: url('../img/IMAGE\ \ CATEGORY\ ACCOUNTING.jpg');
+}
+
+.study-card-3 {
+    width: 400px;
+    height: 180px;
+    background-image: url('../img/IMAGE\ \ CATEGORY\ MATHEMATICS.jpg');
+
+}
+
+.study-card-4 {
+    width: 400px;
+    height: 180px;
+    background-image: url('../img/IMAGE\ \ CATEGORY\ PROGRAMMING.jpg');
+
+}
+
+.study-card-5 {
+    height: 180px;
+    background-image: url('../img/IMAGE\ \ CATEGORY\ ARCHITECTURE.jpg');
+
+}
+
+.study-card-6 {
+    width: 400px;
+    height: 180px;
+    background-image: url('../img/IMAGE\ \ CATEGORY\ BIOLOGY.jpg');
+
+}
+
+.study-img {
+    border-radius: 20px;
+}
+
+.study-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .study-cards {
+        grid-template-areas:
+            "studycard1 studycard2"
+            "studycard3 studycard4"
+            "studycard5 studycard6"
+
+    }
+
+    .study-card-1,
+    .study-card-2,
+    .study-card-3,
+    .study-card-4,
+    .study-card-5,
+    .study-card-6 {
+        width: 300px !important;
+        height: 400px !important;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 725px) {
+    .study-cards {
+        grid-template-areas:
+            "studycard1"
+            "studycard2"
+            "studycard3"
+            "studycard4"
+            "studycard5"
+            "studycard6";
+    }
+
+    .study-card-3,
+    .study-card-4,
+    .study-card-5,
+    .study-card-6 {
+        width: 300px;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .study-img img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .study-card-1,
+    .study-card-2,
+    .study-card-3,
+    .study-card-4,
+    .study-card-5,
+    .study-card-6 {
+        width: 300px !important;
+        height: 200px !important;
+        background-size: cover;
+    }
+
+    .study-card-1 .h4,
+    .study-card-2 .h4 {
+        bottom: 40% !important;
+    }
+}
+
+
+/* Area Names*/
+.study-card-1 {
+    grid-area: studycard1;
+}
+
+.study-card-2 {
+    grid-area: studycard2;
+}
+
+.study-card-3 {
+    grid-area: studycard3;
+}
+
+.study-card-4 {
+    grid-area: studycard4;
+}
+
+.study-card-5 {
+    grid-area: studycard5;
+}
+
+.study-card-6 {
+    grid-area: studycard6;
+}
+
+/* Study End*/
+
+/* Team Start  */
+.teams {
+    background-color: #EFEFEF;
+    padding: 10px;
+}
+
+.team-cards {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "team1 team2 team3 team4";
+}
+
+.team-cards .card-header {
+    background-image: url('../img/IMAGE\ BACKGROUND\ CARD\ TEAM\ \ \(1\).jpg');
+    background-size: cover;
+    background-position-y: -70px;
+    height: 100px;
+    position: relative;
+}
+
+.img-team {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    width: 90px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+
+    transform: translate(65%, 50%);
+}
+
+.img-team img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .team-cards {
+        grid-template-areas:
+            "team1 team2"
+            "team3 team4";
+    }
+}
+
+@media (max-width: 520px) {
+    .team-cards {
+        grid-template-areas:
+            "team1"
+            "team2"
+            "team3"
+            "team4";
+    }
+}
+
+
+/* Area Names*/
+
+.team-1 {
+    grid-area: team1;
+    /* height: 300px; */
+}
+
+.team-2 {
+    grid-area: team2;
+}
+
+.team-3 {
+    grid-area: team3;
+}
+
+.team-4 {
+    grid-area: team4;
+}
+
+/* Team End */
+
+/* Testimonials Start */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+}
+
+.testimonials .row {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .container {
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/IMAGE\ TESTIMONIALS.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonials .h1 {
+    font-size: 45px;
+}
+
+.testimonials .single-slide {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    /* height: 300px; */
+}
+
+.testimonials .single-slide img {
+    filter: brightness(0.7);
+}
+
+.testimonials .single-slide p {
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: orangered;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.testimonials img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* Responsive Start */
+@media (max-width:720px) {
+    .testimonials .h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:400px) {
+    .testimonials .h1 {
+        font-size: 25px;
+    }
+
+    .slide-text p {
+        bottom: 45% !important;
+        left: 20% !important;
+    }
+}
+
+/* Responsive End*/
+
+/* Testimonials End */
+
+/* Footer start*/
+@media (max-width: 480px) {
+    .single-footer-widget a img {
+        width: 150px !important;
+    }
+
+    .single-footer-widget .input-group {
+        width: 80%;
+        margin: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+/* Footer End*/

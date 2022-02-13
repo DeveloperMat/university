@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>University</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.png">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Sweet Alert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <div class="header-info d-flex">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="d-flex  align-items-center" style="position: relative; top:8px">
+                    <p class="mr-3 text-white">123 456 789</p>
+                    <p class="text-white"> @gmail.com</p>
+                </div>
+                <div class="top-social-info ml-5">
+                    <!-- <a href="#"><i class=""></i></a> -->
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Area -->
+        <div class="pixel-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container-fluid">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="pixelNav">
+
+                        <!-- Nav brand -->
+                        <div class="d-flex align-items-center">
+                            <a href="index" class="nav-brand"><img src="img/LOGO.png" alt=""></a>
+                        </div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Courses</a></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Contact Us</a>
+                                    <li><a href="#" id="register">Register</a></li>
+                                </ul>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="header-text">
+                    <h4 class="text-white">Welcome a the University</h4>
+                    <hr>
+                    <h2 class="text-white h1">We are an online <br> platform to make learning</h2>
+                    <a href="#" class="btn btn-primary mt-3">Get Now</a>
+                </div>
+            </div>
+            <div class="header-form border-0" style="width: 400px; ">
+                <div class="card">
+                    <div class="card-header text-center h4">Register Now</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="d-flex mt-3">
+                            <input type="text" name="" class="form-control" style="margin-right: 10px" id="">
+                            <input type="text" name="" class="form-control" id="">
+                        </div>
+                        <div class="input-group mt-3">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="input-group mt-3">
+                            <textarea class="form-control" style="resize: none;" name="" id="" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class=" mt-3 btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn btn-primary" style="position: absolute; left: 30%; bottom: 0;">Register Now</a> -->
+        </div>
+
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area" style="position: relative; min-height:500px">
+        <div class="hero-slideshow owl-carousel">
+
+            <!-- Single Slide -->
+            <div class="single-slide">
+                <!-- Background Image-->
+                <div class="slide-bg-img bg-img" style="background-image:url(./img/IMAGEN\ HERO.jpg);"></div>
+                <!-- Welcome Text -->
+                <!-- <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 col-lg-9">
+                                <div class="welcome-text">
+                                    <h2 data-animation="fadeInUp" data-delay="300ms"><span class="lang" key="agencia">Agencia Creativa</span><br>2021</h2>
+                                    <h4 data-animation="fadeInUp" data-delay="500ms" class="lang" key="creatividad">Creatividad que <span>se ve</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+            <!-- Single Slide -->
+            <div class="single-slide single-slide-video">
+                <!-- Background Image-->
+                <div class="slide-bg-img slide-2 bg-img""></div>
+                <!-- Welcome Text -->
+                <!-- <div class=" container h-100"> -->
+                    <!-- <div class="row h-100 align-items-center"> -->
+                    <!-- <div class="col-12 col-lg-9"> -->
+                    <video class="myVideo" style="position: relative; top:20px" width="100%" autoplay loop muted
+                        height="100%">
+                        <source src="./Videos/hero-video.mp4" autoplay controls type="video/mp4" />
+                        <!-- <source src="video.webm" type="video/webm" /> -->
+                        <!-- <source src="video.ogv" type="video/ogg" /> -->
+                        <img src="imagen.png" alt="Video no soportado" />
+                        Su navegador no soporta contenido multimedia.
+                    </video>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+
+            </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- The Most Popular ###### -->
+    <section class="popular container mt-5" style="min-height:650px">
+        <div class="popular-text">
+            <ul>
+                <li class="li h4"> The Most popular</li>
+            </ul>
+            <hr>
+            <p class="h5">know what we offer you</p>
+        </div>
+        <div class="col-12">
+            <div class="popular-cards mt-5 mb-5 ">
+                <div class="card-1 mr-4">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/IMAGE CURSO 1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Design for the web with adobe photoshop</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-2 mr-4">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/IMAGE CURSO 1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Design for the web with adobe photoshop</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-3 mr-4">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/IMAGE CURSO 1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Design for the web with adobe photoshop</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-4 mr-4">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/IMAGE CURSO 1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Design for the web with adobe photoshop</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ##### The Most Popular ##### -->
+
+    <!-- ##### About Us Start ###### -->
+    <section class="about-us" style="min-height: 500px;">
+        
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-100 popular-text">
+                        <ul>
+                            <li class="li text-white h4"> The Most popular</li>
+                        </ul>
+                        <hr>
+                        <h2 class="text-white">We know what we offer you</h2>
+                        <div class="about-us-text text-white mt-5" style="width: 80%;">
+                            <p class="text-white">The university is a physical place, buildings, laboratories, libraries
+                                ... where students
+                                and teachers meet. The university is also a human-social system, that is, a set of
+                                elements are related and interact with each other.</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">View More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="about-us-img">
+                        <img src="./img/IMAGE ABOUT US.jpg" class="img-fluid" alt="About Us Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Us Area End ###### -->
+
+    <section class="icons" style="min-height: 280px;">
+        <div class="icons-content container">
+            <div class="icon-box-1 m-auto">
+                <div class="icon-image">
+                    <img src=" img/ICONO 1.png" class="img-fluid" alt="">
+                </div>
+                <div class="icon-text">
+                    <p class="h5 text-white ml-2 mt-3">Excellent <span style="display: block;">Content</span></p>
+                </div>
+            </div>
+            <div class="icon-box-2 m-auto">
+                <div class="icon-image"">
+                    <img src=" img/ICONO 2.png" class="img-fluid" alt="">
+                </div>
+                <div class="icon-text">
+                    <p class="h5 text-white ml-2 mt-3">Excellent <span style="display: block;">Content</span></p>
+
+                </div>
+            </div>
+            <div class="icon-box-3 m-auto">
+                <div class="icon-image"">
+                    <img src=" img/ICONO 3.png" class="img-fluid" alt="">
+                </div>
+                <div class="icon-text">
+                    <p class="h5 text-white ml-2 mt-3">Excellent <span style="display: block;">Content</span></p>
+
+                </div>
+            </div>
+            <div class="icon-box-4 m-auto">
+                <div class="icon-image"">
+                    <img src=" img/ICONO 4.png" class="img-fluid" alt="">
+                </div>
+                <div class="icon-text">
+                    <p class="h5 text-white ml-2 mt-3">Excellent <span style="display: block;">Content</span></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ##### Study Area Start #####-->
+    <section class="study mt-5" style="min-height: 450px;">
+        <div class="study-content container">
+            <div class="study-text">
+                <ul>
+                    <li class="li h4"> Study careers</li>
+                </ul>
+                <hr>
+                <p class="h5">Explore the different careers we offer</p>
+            </div>
+            <div class="study-cards mt-5">
+                <div class="study-card-1 study-img">
+                    <p class="h4 text-white" style="position: absolute; bottom: 30%; left: 10%;">Administración</p>
+                    <a href="#" class="btn btn-warning btn-small text-white"
+                        style="position: absolute; bottom: 20%; left: 10%;">Explorar</a>
+                </div>
+                <div class="study-card-2 study-img">
+                    <p class="h4 text-white" style="position: absolute; bottom: 30%; left: 10%;">Administración</p>
+                    <a href="#" class="btn btn-warning btn-small text-white"
+                        style="position: absolute; bottom: 20%; left: 10%;">Explorar</a>
+                    <!-- <img src="img/IMAGE  CATEGORY ACCOUNTING.jpg" class="img-fluid"> -->
+                </div>
+                <div class="study-card-3 study-img">
+                    <p class="h4 text-white" style="position: absolute; bottom: 40%; left: 10%;">Administración</p>
+                    <a href="#" class="btn btn-warning btn-small text-white"
+                        style="position: absolute; bottom: 20%; left: 10%;">Explorar</a>
+                    <!-- <img src="img/IMAGE  CATEGORY MATHEMATICS.jpg" class="img-fluid" alt=""> -->
+                </div>
+                <div class="study-card-4 study-img">
+                    <p class="h4 text-white" style="position: absolute; bottom: 40%; left: 10%;">Administración</p>
+                    <a href="#" class="btn btn-warning btn-small text-white"
+                        style="position: absolute; bottom: 20%; left: 10%;">Explorar</a>
+                    <!-- <img src="img/IMAGE  CATEGORY PROGRAMMING.jpg" class="img-fluid" alt=""> -->
+                </div>
+                <div class="study-card-5 study-img">
+                    <p class="h4 text-white" style="position: absolute; bottom: 40%; left: 10%;">Administración</p>
+                    <a href="#" class="btn btn-warning btn-small text-white"
+                        style="position: absolute; bottom: 20%; left: 10%;">Explorar</a>
+                    <!-- <img src="img/IMAGE  CATEGORY ARCHITECTURE.jpg" class="img-fluid" alt=""> -->
+                </div>
+                <div class="study-card-6 study-img"">
+                    <p class=" h4 text-white" style="position: absolute; bottom: 40%; left: 10%;">Administración</p>
+                    <a href="#" class="btn btn-warning btn-small text-white"
+                        style="position: absolute; bottom: 20%; left: 10%;">Explorar</a>
+                    <!-- <img src="img/IMAGE  CATEGORY BIOLOGY.jpg" class="img-fluid" alt=""> -->
+                </div>
+
+
+            </div>
+            <div class="mt-5" style="width: 100%; text-align: center;">
+                <a href="#" class="text-center m-auto btn btn-outline-warning">View More</a>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Study Area End #####-->
+
+    <!-- ##### Team Area Start ##### -->
+    <section class="teams mt-5" style="min-height: 650px;">
+        <div class="container mt-5">
+            <div class="team-text">
+                <ul>
+                    <li class="li h4"> Our team</li>
+                </ul>
+                <hr>
+                <p class="h5">Meet the best profesionals</p>
+            </div>
+            <div class="col-12">
+                <div class="team-cards mt-5 mb-5 ">
+                    <div class="team-1">
+                        <div class="card" style="width: 16rem;">
+                            <div class="card-header"></div>
+                            <div class="card-body text-center mt-5">
+                                <div class="img-team">
+                                    <img src="/img/person_1.jpg" alt="" srcset="">
+                                </div>
+                                <h5 class="card-title">John Smith</h5>
+                                <p class="card-text" style="position: relative; top: -18px;">Math Teacher</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-2">
+                        <div class="card" style="width: 16rem;">
+                            <div class="card-header"></div>
+                            <div class="card-body text-center mt-5">
+                                <div class="img-team">
+                                    <img src="/img/person_2.jpg" alt="" srcset="">
+                                </div>
+                                <h5 class="card-title">John Smith</h5>
+                                <p class="card-text" style="position: relative; top: -18px;">Math Teacher</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-3">
+                        <div class="card" style="width: 16rem;">
+                            <div class="card-header"></div>
+                            <div class="card-body text-center mt-5">
+                                <div class="img-team">
+                                    <img src="/img/person_3.jpg" alt="" srcset="">
+                                </div>
+                                <h5 class="card-title">John Smith</h5>
+                                <p class="card-text" style="position: relative; top: -18px;">Math Teacher</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-4">
+                        <div class="card" style="width: 16rem;">
+                            <div class="card-header"></div>
+                            <div class="card-body text-center mt-5">
+                                <div class="img-team">
+                                    <img src="/img/person_5.jpg" alt="" srcset="">
+                                </div>
+                                <h5 class="card-title">John Smith</h5>
+                                <p class="card-text" style="position: relative; top: -18px;">Math Teacher</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5" style="width: 100%; text-align: center;">
+                <a href="#" class="text-center m-auto btn btn-primary">View More</a>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Team Area End ##### -->
+
+    <!-- ##### Testimonials Start ##### -->
+    <div class="testimonials">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-xl-6 col-md-6 col-12 text-center">
+                    <p class="h5 text-white">View Testimonials</p>
+                    <p class="h1 text-white">FOR US IT IS VERY <br> IMPORTANT TO KNOW <br>THE OPINIONS OF OUR <br>
+                        CLIENTS</p>
+                </div>
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="hero-slideshow owl-carousel">
+                        <!-- Single Slide -->
+                        <div class="single-slide" style="height: 350px; background-color: transparent;">
+                            <img src="img/person_4.jpg" alt="">
+                            <!-- Text -->
+                            <div class="slide-text d-flex justify-content-center">
+                                <p style="position: absolute; bottom: 0%;">Jeff Freshman</p>
+                            </div>
+                        </div>
+                        <div class="single-slide" style="height: 350px; background-color: transparent;">
+                            <img src="img/person_1.jpg" alt="">
+                            <!-- Text -->
+                            <div class="slide-text d-flex justify-content-center">
+                                <p style="position: absolute; bottom: 0%;">Example Name</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Testimonials End ##### -->
+
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area section-padding-100-0">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-md-3 mr-3">
+                    <div class="single-footer-widget mb-100">
+                        <!-- Footer Logo -->
+                        <a href="index" class="footer-logo"><img src="img/LOGO.png" style="width: 300px;" alt=""></a>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-md-9 col-lg-8 col-xl-7 mr-3">
+                    <div class="row">
+                        <!-- Single Footer Widget -->
+                        <div class="col-sm-4">
+                            <div class="single-footer-widget mb-100">
+                                <h5 class="widget-title" key="dir">Quick Links</h5>
+                                <ul>
+                                    <li class="mt-4 text-white"><a href="#" class="text-white">About Us</a></li>
+                                    <li class="mt-4 text-white"><a href="#" class="text-white">Courses</a></li>
+                                    <li class="mt-4 text-white"><a href="#" class="text-white">Team</a></li>
+                                    <li class="mt-4 text-white"><a href="#" class="text-white">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Single Footer Widget -->
+                        <div class="col-sm-4">
+                            <div class="single-footer-widget mb-100 mr-3">
+                                <h5 class="widget-title lang">Contact Info</h5>
+                                <ul>
+                                    <li class="mt-4 text-white"><i></i>123 456 789</li>
+                                    <li class="mt-4 text-white"><i></i>info@gmail.com</li>
+                                    <li class="mt-4 text-white"><i></i>adress,United Estates</li>
+                                </ul>
+                                <div class="footer-social-info mt-4">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Footer Widget -->
+                        <div class="col-sm-4">
+                            <div class="single-footer-widget mb-100 mr-3">
+                                <h5 class="widget-title lang" key="nuestrasRedes">newsLetter</h5>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Subscribe"
+                                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Button</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-content">
+                            <!-- Copywrite Text -->
+                            <p class="copywrite-text">
+                                &copy;<script>
+                                    document.write(new Date().getFullYear());
+                                </script><span class="lang" key="derechos">University. All Right Reserved
+                                    <span style="display: block;">This Website Was Designed And Developed by <a
+                                            href="#">Josesilvera.com</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <nav class="footer-nav">
+                            <img src="img/logo Silvera Enterprises.png" style="width: 100px;" text-white"
+                                class="img-fluid" alt="Logo ">
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.0/dist/sweetalert2.all.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+        integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- Script js -->
+    <script src="js/script.js"></script>
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
