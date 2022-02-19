@@ -186,3 +186,5 @@
     }
 
 })(jQuery);
+
+/* Jezer Diaz - Progr */
